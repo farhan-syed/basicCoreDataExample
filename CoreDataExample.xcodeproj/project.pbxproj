@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F8C28DA71EA43D880097B23D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C28DA61EA43D880097B23D /* AppDelegate.swift */; };
-		F8C28DA91EA43D880097B23D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C28DA81EA43D880097B23D /* ViewController.swift */; };
 		F8C28DAC1EA43D880097B23D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C28DAA1EA43D880097B23D /* Main.storyboard */; };
 		F8C28DAF1EA43D880097B23D /* CoreDataExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8C28DAD1EA43D880097B23D /* CoreDataExample.xcdatamodeld */; };
 		F8C28DB11EA43D880097B23D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C28DB01EA43D880097B23D /* Assets.xcassets */; };
 		F8C28DB41EA43D880097B23D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C28DB21EA43D880097B23D /* LaunchScreen.storyboard */; };
 		F8C28DBF1EA43D880097B23D /* CoreDataExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C28DBE1EA43D880097B23D /* CoreDataExampleTests.swift */; };
 		F8C28DCA1EA43D880097B23D /* CoreDataExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C28DC91EA43D880097B23D /* CoreDataExampleUITests.swift */; };
+		F8C28DD81EA43E040097B23D /* addItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C28DD71EA43E040097B23D /* addItemViewController.swift */; };
+		F8C28DDA1EA43E300097B23D /* DisplayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C28DD91EA43E300097B23D /* DisplayTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 /* Begin PBXFileReference section */
 		F8C28DA31EA43D880097B23D /* CoreDataExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C28DA61EA43D880097B23D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F8C28DA81EA43D880097B23D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F8C28DAB1EA43D880097B23D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8C28DAE1EA43D880097B23D /* CoreDataExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataExample.xcdatamodel; sourceTree = "<group>"; };
 		F8C28DB01EA43D880097B23D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		F8C28DC51EA43D880097B23D /* CoreDataExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C28DC91EA43D880097B23D /* CoreDataExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataExampleUITests.swift; sourceTree = "<group>"; };
 		F8C28DCB1EA43D880097B23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8C28DD71EA43E040097B23D /* addItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addItemViewController.swift; sourceTree = "<group>"; };
+		F8C28DD91EA43E300097B23D /* DisplayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				F8C28DA61EA43D880097B23D /* AppDelegate.swift */,
-				F8C28DA81EA43D880097B23D /* ViewController.swift */,
+				F8C28DD91EA43E300097B23D /* DisplayTableViewController.swift */,
+				F8C28DD71EA43E040097B23D /* addItemViewController.swift */,
 				F8C28DAA1EA43D880097B23D /* Main.storyboard */,
 				F8C28DB01EA43D880097B23D /* Assets.xcassets */,
 				F8C28DB21EA43D880097B23D /* LaunchScreen.storyboard */,
@@ -191,11 +194,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Farhan Syed";
 				TargetAttributes = {
 					F8C28DA21EA43D880097B23D = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8C23SAS74W;
 						ProvisioningStyle = Automatic;
 					};
 					F8C28DB91EA43D880097B23D = {
@@ -262,8 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8C28DA91EA43D880097B23D /* ViewController.swift in Sources */,
+				F8C28DDA1EA43E300097B23D /* DisplayTableViewController.swift in Sources */,
 				F8C28DA71EA43D880097B23D /* AppDelegate.swift in Sources */,
+				F8C28DD81EA43E040097B23D /* addItemViewController.swift in Sources */,
 				F8C28DAF1EA43D880097B23D /* CoreDataExample.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +342,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -386,6 +392,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -414,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8C23SAS74W;
 				INFOPLIST_FILE = CoreDataExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FarhanSyed.CoreDataExample;
@@ -426,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8C23SAS74W;
 				INFOPLIST_FILE = CoreDataExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FarhanSyed.CoreDataExample;
@@ -507,6 +516,7 @@
 				F8C28DD01EA43D880097B23D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8C28DD11EA43D880097B23D /* Build configuration list for PBXNativeTarget "CoreDataExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +525,7 @@
 				F8C28DD31EA43D880097B23D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8C28DD41EA43D880097B23D /* Build configuration list for PBXNativeTarget "CoreDataExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +534,7 @@
 				F8C28DD61EA43D880097B23D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
